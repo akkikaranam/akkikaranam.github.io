@@ -1,36 +1,44 @@
 body {
     font-family: Verdana, sans-serif;
-    background-color: #f0f8ff; 
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
     color: #333;
 }
 
 h1 {
     text-align: center;
+    padding: 20px;
     background-color: #222;
     color: #fff;
+    margin: 0;
 }
 
-h2 {
-    text-align: center;
-    color: #fff;
-}
 .about {
-  
     background-color: #e6f7ff;
-    
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
 .skills {
     background-color: #fff0f5;
-    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
 .projects {
     background-color: #f9f9e6;
-    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
 .contact {
     background-color: #f0fff0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
     text-align: center;
 }
