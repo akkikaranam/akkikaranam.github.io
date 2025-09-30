@@ -8,29 +8,24 @@ h1 {
     text-align: center;
     background-color: #222;
     color: #fff;
-    margin: 0;
 }
 
 .about {
     background-color: #e6f7ff;
-    margin: 20px;
     text-align: center;
 }
 
 .skills {
     background-color: #fff0f5;
-    border-radius: 10px;
     text-align: center;
 }
 
 .projects {
     background-color: #f9f9e6;
-    margin: 20px;
     text-align: center;
 }
 
 .contact {
     background-color: #f0fff0;
-    margin: 20px;
     text-align: center;
 }
