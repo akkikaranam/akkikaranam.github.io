@@ -52,3 +52,7 @@ h2 {
 p {
     text-align: left;
 }
+
+.project p {
+    text-align: center;
+}
