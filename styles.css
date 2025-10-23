@@ -48,11 +48,12 @@ p {
     text-align: left;
 }
 
-.project p {
-    text-align: center;
+.projects {
+ background-color: #f0fff0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
 }
-
-
 
 
 .projects img[src*="AffinityDiagram"] {
