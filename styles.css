@@ -61,3 +61,7 @@ padding: 20px 10px;
 background: white; /* pick a color */
 border-radius: 25%;
 }
+
+.projects img {
+  max-width: 350px;
+}
