@@ -70,14 +70,13 @@ color: purple;
 }
 
 
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+
 
 .avatar {
     width: 80px;     
     height: 80px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
