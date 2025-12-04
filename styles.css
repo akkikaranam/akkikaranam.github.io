@@ -68,3 +68,11 @@ a {
 text-decoration: none;
 color: purple;
 }
+
+
+.avatar {
+    width: 120px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 15px;
+}
