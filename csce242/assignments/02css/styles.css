@@ -44,7 +44,7 @@ p {
 
 .pictures {
     text-align: center;
-    margin: 25px 0;
+    margin: 25px 50;
 }
 
 .pictures img {
@@ -69,12 +69,12 @@ th {
     background-color: #3f5f35;
     color: white;
     padding: 14px;
-    border: 2px  #30482b;
+    border: 2px solid #30482b;
 }
 td {
     background-color: #e2ddc8;
     padding: 14px;
-    border: 2px solid #6c7d55;
+    border: 2px dotted #6c7d55;
 }
 
 /* Footer */
