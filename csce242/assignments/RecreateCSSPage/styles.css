@@ -1,0 +1,540 @@
+/* Body */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.site-header {
+    background: #000000;
+    color: white;
+}
+
+.header-inner,
+.nav-inner,
+.school-footer-inner,
+.university-footer-inner {
+    width: 90%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.utility-links {
+    height: 31px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.utility-links a {
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.brand-row {
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.usc-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 9px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.usc-logo strong {
+    font-size: 21px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.logo-mark {
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    background: #73000a;
+    border: 1px solid pink;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 9px;
+}
+
+.medicine-title {
+    color: white;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-nav {
+    height: 37px;
+    background: #73000a;
+}
+
+.nav-inner {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 43px;
+}
+
+.nav-inner a {
+    color: white;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Top hero */
+.main-hero {
+    height: 550px;
+    overflow: hidden;
+}
+
+.main-hero img,
+.photo-feature img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.mission {
+    display: flex;
+    justify-content: center;
+    padding: 31px 20px 35px;
+    background: white;
+}
+
+.mission p {
+    width: 600px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.65;
+}
+
+/* Photo sections */
+.photo-feature {
+    position: relative;
+    height: 570px;
+}
+
+.feature-box {
+    position: absolute;
+    bottom: -25px;
+    width: 535px;
+    min-height: 232px;
+    padding: 28px 32px 30px;
+    background: #73000a;
+    color: white;
+    box-shadow: 0 8px 11px rgba(0, 0, 0, .22);
+}
+
+.right-box {
+    right: 5%;
+}
+
+.left-box {
+    left: 5%;
+}
+
+.feature-box h1 {
+    margin: 0 0 16px;
+    font-size: 32px;
+    line-height: 1.05;
+}
+
+.feature-box p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.outline-button,
+.black-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 11px 20px;
+    border: 2px solid white;
+    color: white;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Quote Sections */
+.quote-section {
+    min-height: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 58px;
+    padding: 62px 20px 45px;
+    background: white;
+}
+
+.quote-photo {
+    width: 245px;
+    height: 245px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.quote-copy {
+    width: 540px;
+}
+
+.quote-copy p {
+    margin: 0 0 20px;
+    color: #73000a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.58;
+}
+
+.quote-copy span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Three cards */
+.story-grid {
+    width: 900px;
+    max-width: 90%;
+    display: flex;
+    gap: 32px;
+    margin: 0 auto;
+    padding: 74px 0 92px;
+}
+
+.story-card {
+    width: 33%;
+    color: #222222;
+}
+
+.story-card img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+
+.story-card h2 {
+    margin: 12px 0 14px;
+    color: #73000a;
+    font-size: 17px;
+    line-height: 1.05;
+}
+
+.story-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+/* Stay Connected Section */
+.stay-connected {
+    min-height: 390px;
+    padding: 76px 20px;
+    background: #ededed;
+    text-align: center;
+}
+
+.stay-connected h1 {
+    margin: 0 0 19px;
+    color: #73000a;
+    font-size: 40px;
+}
+
+.stay-connected p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.stay-links {
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+    margin-top: 44px;
+}
+
+.stay-links a {
+    padding: 13px 23px;
+    background: #73000a;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .25);
+    color: white;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* First footer section */
+.school-footer {
+    padding: 48px 20px 30px;
+    background: #ededed;
+}
+
+.school-footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-school h2 {
+    margin: 0;
+    color: #73000a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+}
+
+.black-button {
+    margin-top: 22px;
+    border: 0;
+    background: #000000;
+    font-size: 11px;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #73000a;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer-nav {
+    width: 240px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 38px;
+    padding: 5px 18px;
+    border-left: 1px solid #c9c9c9;
+    border-right: 1px solid #c9c9c9;
+}
+
+.footer-nav a,
+.address a {
+    color: #73000a;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.address {
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.address p {
+    margin: 6px 0 0;
+}
+
+/* Garnet footer section */
+.university-footer {
+    padding: 34px 20px 42px;
+    background: #73000a;
+    color: white;
+}
+
+.university-footer-inner {
+    display: flex;
+    gap: 55px;
+}
+
+.footer-logo {
+    width: 215px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.footer-logo strong {
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.footer-columns {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr .65fr;
+    gap: 24px;
+}
+
+.footer-columns div {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer-columns h3 {
+    margin: 0 0 4px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.footer-columns a {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.legal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px 20px;
+    background: #000000;
+}
+
+.legal-footer a {
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* Small screens */
+@media (max-width: 700px) {
+    .header-inner,
+    .nav-inner,
+    .school-footer-inner,
+    .university-footer-inner {
+        width: 90%;
+    }
+
+    .utility-links {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        padding: 10px 0;
+    }
+
+    .brand-row {
+        height: auto;
+        min-height: 75px;
+    }
+
+    .medicine-title {
+        font-size: 19px;
+    }
+
+    .main-nav {
+        height: auto;
+    }
+
+    .nav-inner {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .nav-inner a {
+        padding: 12px 10px;
+        font-size: 11px;
+    }
+
+    .main-hero {
+        height: 390px;
+    }
+
+    .mission p {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .photo-feature {
+        height: 480px;
+    }
+
+    .feature-box {
+        right: 5%;
+        bottom: -25px;
+        left: 5%;
+        width: 90%;
+        min-height: 230px;
+    }
+
+    .quote-section {
+        flex-direction: column;
+        gap: 28px;
+        padding: 70px 20px 48px;
+    }
+
+    .quote-photo {
+        width: 185px;
+        height: 185px;
+    }
+
+    .quote-copy {
+        width: 100%;
+    }
+
+    .story-grid,
+    .stay-links,
+    .school-footer-inner,
+    .university-footer-inner {
+        flex-direction: column;
+    }
+
+    .story-card {
+        width: 100%;
+    }
+
+    .story-card img {
+        height: 260px;
+    }
+
+    .stay-links {
+        align-items: center;
+        gap: 16px;
+    }
+
+    .school-footer-inner {
+        gap: 28px;
+    }
+
+    .footer-nav {
+        width: 100%;
+        border-right: 0;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .legal-footer {
+        flex-wrap: wrap;
+        gap: 8px 15px;
+    }
+}
