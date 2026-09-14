@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: aliceblue;
+    color: midnightblue;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px;
+    padding: 25px;
+    text-align: center;
+    background: white;
+}
+
+img{
+    max-width: 45%;
+    height: auto;
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: royalblue;
+}
+
+#sun {
+    cursor: pointer;
+}
+
+h2 {
+    color: crimson;
+    font-size: 22px;
+}
+
+#columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+    margin-top: 25px;
+}
+
+.box {
+    position: relative;
+    min-height: 230px;
+    padding: 18px;
+    border: 2px solid cornflowerblue;
+    background: lightcyan;
+}
+
+.box h3 {
+    color: royalblue;
+}
+
+.dots {
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    font-size: 24px;
+}
+
+#speech-box {
+    cursor: pointer;
+}
+
+#speech {
+    margin-top: 60px;
+}
+
+.bubble {
+    display: inline-block;
+    position: relative;
+    padding: 15px;
+    border: 2px solid midnightblue;
+    border-radius: 18px;
+    background: white;
+}
+
+.bubble:after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 20px;
+    border-width: 12px 10px 0 0;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+#beverage-message {
+    color: royalblue;
+}
+
+#sticker-box {
+    position: relative;
+}
+
+#sticker {
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 65px;
+    font-size: 30px;
+}
+
+.footer {
+    color: royalblue;
+}
+
+@media (max-width: 700px) {
+    #columns {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .box {
+        min-height: 180px;
+    }
+}
