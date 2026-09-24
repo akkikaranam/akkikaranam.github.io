@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#road {
+    position: relative;
+    height: 280px;
+    border: 4px solid white;
+    background: #79c84c;
+}
+
+.grass {
+    height: 60px;
+    background: rgb(30, 142, 26);
+}
+
+.road {
+    position: relative;
+    height: 180px;
+    background: rgb(55, 51, 51);
+    border-top: 5px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+}
+
+.line {
+    position: absolute;
+    top: 85px;
+    width: 70px;
+    height: 7px;
+    background: #f7d847;
+}
+
+.line-one {
+    left: 20px;
+}
+
+.line-two {
+    left: 170px;
+}
+
+.line-three {
+    left: 320px;
+}
+
+.line-four {
+    left: 470px;
+}
+
+.line-five {
+    left: 620px;
+}
+
+.line-six {
+    left: 770px;
+}
+
+.line-seven {
+    left: 920px;
+}
+
+
+/* Cars created with JavaScript */
+.car {
+    position: absolute;
+    width: 88px;
+    height: 30px;
+    border-radius: 20px 20px 8px 8px;
+    z-index: 1;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.car-window {
+    position: absolute;
+    top: -16px;
+    left: 22px;
+    width: 43px;
+    height: 20px;
+    border-radius: 15px 15px 3px 3px;
+    background: #c9edff;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.wheel {
+    position: absolute;
+    bottom: -8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #555;
+}
+
+.left-wheel {
+    left: 10px;
+}
+
+.right-wheel {
+    right: 10px;
+}
