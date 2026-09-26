@@ -7,6 +7,7 @@
     --white: #f7faff;
     --text: #aab8cc;
     --line: #202d46;
+    --dots: #12315c;
 }
 
 * {
@@ -20,6 +21,11 @@ body {
     color: var(--white);
 }
 
+.dots-page main {
+    background-image: radial-gradient(var(--dots) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
 a {
     text-decoration: none;
 }
@@ -29,12 +35,12 @@ img {
     display: block;
 }
 
-#main-header {
+#site-header {
     border-bottom: 1px solid var(--line);
     background-color: var(--background);
 }
 
-#main-nav {
+#site-nav {
     width: 90%;
     max-width: 1160px;
     min-height: 74px;
@@ -60,15 +66,15 @@ img {
     font-size: 10px;
 }
 
-#main-nav ul li a {
+#site-nav ul li a {
     color: var(--text);
 }
 
-#main-nav .logo {
+#site-nav .logo {
     color: var(--white);
 }
 
-#main-nav ul {
+#site-nav ul {
     display: flex;
     gap: 30px;
     margin: 0;
@@ -78,7 +84,7 @@ img {
     font-size: 13px;
 }
 
-#main-nav li a:hover, footer a:hover {
+#site-nav li a:hover, footer a:hover {
     color: var(--light-blue);
 }
 
@@ -118,7 +124,10 @@ img {
     display: flex;
     align-items: center;
     gap: 80px;
-    background-image: radial-gradient(#12315c 1px, transparent 1px);
+}
+
+#hero, #services-hero, #about-hero, #careers-hero {
+    background-image: radial-gradient(var(--dots) 1px, transparent 1px);
     background-size: 32px 32px;
 }
 
@@ -268,7 +277,7 @@ h3 {
     font-size: 30px;
 }
 
-.text-link {
+.link {
     color: var(--light-blue);
     font-size: 13px;
     font-weight: bold;
@@ -372,12 +381,10 @@ footer .logo {
     font-size: 10px;
 }
 
-footer .logo {
-    color: var(--white);
-}
 
-.active {
-    color: var(--light-blue) !important;
+
+#site-nav .current {
+    color: var(--light-blue);
 }
 
 #services-hero {
@@ -413,7 +420,7 @@ footer .logo {
     text-align: left;
 }
 
-#services-cta {
+#services-action {
     width: 90%;
     max-width: 1160px;
     margin: 100px auto;
@@ -423,60 +430,657 @@ footer .logo {
     background: var(--blue);
 }
 
-#services-cta h2 {
+#services-action h2 {
     margin-bottom: 10px;
 }
 
-#services-cta .sub-text1 {
+#services-action .sub-text1 {
     color: var(--white);
 }
 
-@media (max-width: 600px) {
-    #services-hero {
-        padding: 55px 0 75px;
-        flex-direction: column;
-        gap: 35px;
-    }
-
-    .service-details-cards {
-        grid-template-columns: 1fr;
-    }
+#about-hero {
+    width: 90%;
+    max-width: 1160px;
+    margin: auto;
+    padding: 75px 0;
+    display: flex;
+    align-items: center;
+    gap: 80px;
 }
 
-/* Phone */
+#mission {
+    padding: 90px 5%;
+    text-align: center;
+    background: var(--card-light);
+}
+
+
+.value-cards {
+    max-width: 950px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    text-align: left;
+}
+
+.value-card {
+    width: 32%;
+    min-height: 190px;
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--background);
+}
+
+.value-card p, .process-card p, .team-card p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+#the-method {
+    width: 90%;
+    max-width: 950px;
+    margin: 105px auto;
+    text-align: center;
+}
+
+.process-card {
+    margin-bottom: 14px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-align: left;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--card);
+}
+
+.process-card span {
+    padding: 9px;
+    border-radius: 50%;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.process-card h3, .process-card p {
+    margin: 0;
+}
+
+#leadership {
+    padding: 90px 5% 45px;
+    text-align: center;
+    background: var(--card-light);
+}
+
+.team-cards {
+    max-width: 950px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    text-align: left;
+}
+
+.team-card {
+    width: 32%;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--background);
+}
+
+.team-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.team-card h3,
+.team-card p {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.team-card h3 {
+    margin-bottom: 4px;
+}
+
+.team-card p {
+    margin-top: 0;
+}
+
+.team-card .team-role {
+    margin-bottom: 7px;
+    color: var(--light-blue);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#consultance {
+    padding: 0 5% 80px;
+    padding: 0 5% 80;
+    text-align: center;
+    background: var(--card-light);
+}
+
+#consultance h2 {
+    margin-bottom: 15px;
+}
+
+#insights-hero {
+    width: 90%;
+    max-width: 1160px;
+    margin: auto;
+    padding: 80px 0 55px;
+    text-align: center;
+}
+
+#insights-hero h1 {
+    margin-bottom: 30px;
+}
+
+.article-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.article-filters a {
+    padding: 9px 14px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    color: var(--text);
+    font-size: 11px;
+}
+
+.article-filters .selected-filter {
+    background: var(--blue);
+    color: var(--white);
+}
+
+#featured-article {
+    width: 90%;
+    max-width: 1160px;
+    margin: auto;
+    padding-bottom: 75px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+#featured-article img {
+    width: 56%;
+    border-radius: 10px;
+}
+
+.featured-text {
+    width: 44%;
+}
+
+.featured-text h2 {
+    text-align: left;
+    font-size: 30px;
+}
+
+.author {
+    margin: 22px 0 4px;
+    color: var(--white);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.date {
+    margin-top: 0;
+    color: var(--text);
+    font-size: 12px;
+}
+
+#articles {
+    width: 90%;
+    max-width: 1160px;
+    margin: auto;
+    padding-bottom: 90px;
+}
+
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.article-cards {
+    width: 31%;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--card);
+}
+
+.article-cards img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.article-text {
+    padding: 18px;
+}
+
+.cards-title {
+    margin: 0;
+    color: var(--light-blue);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.article-text h3 {
+    min-height: 43px;
+    line-height: 1.35;
+}
+
+.article-text p:not(.cards-title) {
+    color: var(--text);
+    font-size: 12px;
+}
+
+#newsletter {
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto 100px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: var(--card-light);
+}
+
+#newsletter h2 {
+    margin: 0 0 8px;
+    text-align: left;
+    font-size: 23px;
+}
+
+#newsletter p {
+    margin: 0;
+    color: var(--text);
+    font-size: 13px;
+}
+
+.email {
+    display: flex;
+    gap: 10px;
+}
+
+.email input {
+    width: 220px;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: var(--background);
+    color: var(--white);
+}
+
+#insights-footer .footer-top {
+    max-width: 1160px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+#insights-footer .footer-brand {
+    width: 38%;
+}
+
+#insights-footer .footer-column {
+    width: 18%;
+}
+
+#careers-hero {
+    width: 90%;
+    max-width: 1160px;
+    margin: auto;
+    padding: 75px 0;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+#culture {
+    padding: 90px 5%;
+    text-align: center;
+    background: var(--card-light);
+}
+
+.culture-cards {
+    max-width: 950px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    text-align: left;
+}
+
+.culture-card {
+    width: 32%;
+    min-height: 165px;
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--background);
+}
+
+.culture-card p,
+.job-card p,
+#stay-connected p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+#open-positions {
+    width: 90%;
+    max-width: 1160px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.job-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.job-filters a {
+    padding: 9px 14px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    color: var(--text);
+    font-size: 11px;
+}
+
+.job-filters .selected-filter {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.job-card {
+    width: 30%;
+    min-height: 205px;
+    margin-bottom: 20px;
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--card);
+}
+
+.job-card h3 {
+    min-height: 42px;
+    line-height: 1.35;
+}
+
+.job-card p:not(.cards-title) {
+    margin-bottom: 20px;
+}
+
+#stay-connected {
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto 100px;
+    padding: 65px 25px;
+    border-radius: 10px;
+    text-align: center;
+    background: var(--card-light);
+}
+
+#stay-connected h2 {
+    margin-bottom: 10px;
+}
+
+#stay-connected p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+#careers-footer .footer-top {
+    max-width: 1160px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+#careers-footer .footer-brand {
+    width: 38%;
+}
+
+#careers-footer .footer-column {
+    width: 18%;
+}
+
+#contact-hero {
+    width: 90%;
+    max-width: 1160px;
+    margin: auto;
+    padding: 80px 0 50px;
+    text-align: center;
+}
+
+#contact-hero .intro {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact-main {
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+#contact-form {
+    width: 58%;
+    padding: 30px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--card);
+}
+
+#contact-form h2,
+#contact-details h2 {
+    text-align: left;
+    font-size: 25px;
+}
+
+#contact-form label {
+    display: block;
+    margin: 18px 0 7px;
+    color: var(--white);
+    font-size: 12px;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--background);
+    color: var(--white);
+}
+
+#contact-form textarea {
+    height: 115px;
+    resize: vertical;
+}
+
+#contact-form button {
+    margin-top: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+#contact-details {
+    width: 38%;
+    padding: 30px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--card);
+}
+
+.contact-card {
+    margin-bottom: 22px;
+}
+
+.contact-card p:not(.cards-title) {
+    margin: 6px 0;
+    color: var(--text);
+    font-size: 14px;
+}
+
+.contact-card a {
+    color: var(--light-blue);
+    font-size: 14px;
+}
+
+#contact-details img {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+#contact-options {
+    padding: 90px 5%;
+    text-align: center;
+    background: var(--card-light);
+}
+
+.contact-option-cards {
+    max-width: 950px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    text-align: left;
+}
+
+.contact-option {
+    width: 32%;
+    min-height: 205px;
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--background);
+}
+
+.contact-option p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+/* Phone layout */
 @media (max-width: 600px) {
-    #main-nav {
+    #site-nav {
         padding: 18px 0;
-        flex-wrap: wrap;
         gap: 18px;
+        flex-wrap: wrap;
     }
 
-    #main-nav ul {
+    #site-nav ul {
         order: 3;
         width: 100%;
         justify-content: space-between;
         gap: 5px;
         font-size: 11px;
     }
-    
-    #insights .cards {
+
+    #insights .cards,
+    .service-details-cards {
         grid-template-columns: 1fr;
     }
 
-    #hero, .expertise-section {
+    #hero,
+    .expertise-section,
+    #services-hero,
+    #about-hero,
+    #featured-article,
+    #newsletter,
+    #careers-hero,
+    #contact-main,
+    .value-cards,
+    .team-cards,
+    .culture-cards,
+    .job-list,
+    .article-list,
+    .contact-option-cards,
+    #about-footer .footer-top,
+    #insights-footer .footer-top,
+    #careers-footer .footer-top {
         flex-direction: column;
     }
 
-    .hero-text, .hero-image, .expertise-section img, .expertise-text {
+    #services-hero {
+        padding: 55px 0 75px;
+        gap: 35px;
+    }
+
+    .hero-text,
+    .hero-image,
+    .expertise-section img,
+    .expertise-text,
+    .value-card,
+    .team-card,
+    .culture-card,
+    .job-card,
+    .article-cards,
+    .contact-option,
+    #contact-form,
+    #contact-details,
+    #featured-article img,
+    .featured-text,
+    #about-footer .footer-brand,
+    #about-footer .footer-column,
+    #insights-footer .footer-brand,
+    #insights-footer .footer-column,
+    #careers-footer .footer-brand,
+    #careers-footer .footer-column {
         width: 100%;
     }
 
+    .expertise-text,
     .expertise-text h2 {
         text-align: center;
     }
 
-    .expertise-text {
-        text-align: center;
+    .email,
+    .email input {
+        width: 100%;
+    }
+
+    .email {
+        flex-wrap: wrap;
     }
 
     h1 {
@@ -486,11 +1090,11 @@ footer .logo {
     h2 {
         font-size: 27px;
     }
-
+    
     .cards {
         grid-template-columns: 1fr;
     }
-
+   
     #capabilities {
         margin-bottom: 80px;
     }

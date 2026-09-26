@@ -12,7 +12,7 @@ main {
     text-align: center;
 }
 
-#road {
+#road { /* Took inspiration from https://github.com/botarsh/Moving-Car/tree/master */
     position: relative;
     height: 280px;
     border: 4px solid white;
