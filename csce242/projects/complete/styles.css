@@ -56,6 +56,9 @@ img {
     letter-spacing: .3px;
 }
 
+.card-link {
+    color: var(--white);
+}
 .logo-icon {
     display: inline-block;
     padding: 3px 6px;
@@ -281,6 +284,16 @@ h3 {
     color: var(--light-blue);
     font-size: 13px;
     font-weight: bold;
+}
+
+.text-link {
+    color: var(--light-blue);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.text-link:hover {
+    color: var(--white);
 }
 
 .industry-row {
@@ -1000,21 +1013,83 @@ footer .logo {
     line-height: 1.65;
 }
 
+.detail-page {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 85px 0 110px;
+    text-align: center;
+}
+
+.detail-page .intro {
+    max-width: 650px;
+    margin: 0 auto 35px;
+}
+
+.detail-image {
+    width: 100%;
+    margin-bottom: 55px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+}
+
+.detail-content {
+    text-align: left;
+}
+
+.detail-content h2 {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.detail-content p, .detail-list {
+
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.detail-list {
+    margin-bottom: 30px;
+}
+
+#nav-toggle {
+    display: none;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--card);
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+}
+
 /* Phone layout */
 @media (max-width: 600px) {
     #site-nav {
-        padding: 18px 0;
-        gap: 18px;
-        flex-wrap: wrap;
-    }
+    padding: 18px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
 
-    #site-nav ul {
-        order: 3;
-        width: 100%;
-        justify-content: space-between;
-        gap: 5px;
-        font-size: 11px;
-    }
+#nav-toggle {
+    display: block;
+    margin-left: auto;
+    padding: 6px 10px;
+}
+
+#site-nav ul {
+    display: none;
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 11px;
+}
+
+#site-nav ul.show {
+    display: flex;
+}
 
     #insights .cards,
     .service-details-cards {
