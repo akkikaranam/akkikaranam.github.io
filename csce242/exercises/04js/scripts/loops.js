@@ -47,3 +47,5 @@ document.getElementById("btn-loop-range").onclick = () => {
         ul.appendChild(li);
     }
 };
+
+    

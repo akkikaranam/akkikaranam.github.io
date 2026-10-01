@@ -54,7 +54,7 @@ const giveDestinations = (destinations) => {
     }
 };
 
-// Checks which option the user selected
+// Checks which option is selected in the dropdown menu
 destinationType.onchange = (e) => {
     if (e.target.value === "cities") {
         giveDestinations(citySkylines);
