@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vacations</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>09Classes - Assignment</h1>
+        <h2>Vacation Locations</h2>
+    </header>
+
+<main class="vacations"></main>
+    <div id="vacationModal" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+        <span class="w3-button w3-display-topright" onclick="document.getElementById('vacationModal').style.display='none'">
+            &times;
+        </span>
+
+    <div class="modal-info">
+        <img id="modalImage" src="" alt="">
+        <div>
+            <h2 id="modalTitle"></h2>
+            <p id="modalType"></p>
+            <p id="modalDescription"></p>
+            <p id="modalThings"></p>
+            <iframe id="modalMap" title="Vacation map"></iframe>
+        </div>
+    </div>
+    </div>
+</div>
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	color: #f4f7fb;
+	background-color: #0b1020;
+}
+
+header {
+	padding: 35px 15px 15px;
+}
+
+h1 {
+	color: #8edcff;
+	margin-bottom: 5px;
+}
+
+header h2 {
+	color: #f76065;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.vacations {
+	width: 900px;
+	max-width: 90%;
+	margin: 25px auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 18px;
+}
+
+.vacation-card {
+	background-color: #202b45;
+	border: 1px solid #33456e;
+	border-radius: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vacation-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 10px 22px rgba(142, 220, 255, 0.22);
+}
+
+.vacation-card h3 {
+	color: #ffffff;
+	margin: 0;
+	padding: 13px 10px 5px;
+}
+
+.vacation-card p {
+	color: #f76065;
+	margin: 0;
+	padding: 0 10px 13px;
+	font-size: 12px;
+}
+
+.vacation-card img {
+	width: 100%;
+	height: 165px;
+	object-fit: cover;
+	display: block;
+}
+
+.w3-modal-content {
+	background-color: #202b45;
+	color: #f4f7fb;
+	border: 1px solid #49628f;
+	border-radius: 10px;
+}
+
+.modal-info {
+	padding: 25px;
+	display: flex;
+	gap: 20px;
+	text-align: left;
+}
+
+.modal-info h2 {
+	color: #8edcff;
+}
+
+.modal-info p {
+	line-height: 1.5;
+}
+
+.modal-info img {
+	width: 45%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.modal-info iframe {
+	width: 100%;
+	height: 180px;
+	border: 0;
+	border-radius: 8px;
+}
+
+.w3-button {
+	color: #ffffff;
+	font-size: 25px;
+}
+
+.w3-button:hover {
+	background-color: #f76065;
+}
+
+@media (max-width: 650px) {
+	.vacations {
+		grid-template-columns: 1fr;
+	}
+
+	.modal-info {
+		display: block;
+	}
+
+	.modal-info img {
+		width: 100%;
+		height: 200px;
+		margin-bottom: 15px;
+	}
+}
