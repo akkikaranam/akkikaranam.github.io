@@ -20,7 +20,7 @@ const baseUrl =
     "https://akkikaranam.github.io/csce242/projects/part7/";
 
 const getInsights = async () => {
-    const url = `${baseUrl}swiftmesh-insights.json`;
+    const url = `${baseUrl}insights.json`;
     const response = await fetch(url);
     return response.json();
 };
