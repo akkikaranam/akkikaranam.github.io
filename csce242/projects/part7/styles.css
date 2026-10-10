@@ -1079,30 +1079,6 @@ footer .logo {
     background: radial-gradient(circle, var(--glow), transparent 70%);
 }
 
-
-    #site-header,
-    main,
-    footer {
-        position: relative;
-        z-index: 1;
-    }
-
-    #featured-article {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 40px;
-    }
-
-    #featured-card {
-        width: 31%;
-    }
-
-    #featured-card .article-cards {
-        width: 100%;
-    }
-
-
-
 /* Phone layout */
 @media (max-width: 600px) {
     #site-nav {
@@ -1118,10 +1094,6 @@ footer .logo {
     margin-left: auto;
     padding: 6px 10px;
 }
-
-#featured-card {
-        width: 100%;
-    }
 
 #site-nav ul {
     display: none;

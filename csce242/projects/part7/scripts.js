@@ -28,15 +28,8 @@ const getInsights = async () => {
 const showInsights = async () => {
     const insights = await getInsights();
 
-    const featuredCard = document.querySelector("#featured-card");
-    const articleList = document.querySelector("#article-list");
-
-    insights.forEach((insight, index) => {
-        if (index === 0) {
-            featuredCard.append(displayInsight(insight));
-        } else {
-            articleList.append(displayInsight(insight));
-        }
+    insights.forEach((insight) => {
+        document.querySelector(".article-list").append(displayInsight(insight));
     });
 };
 
