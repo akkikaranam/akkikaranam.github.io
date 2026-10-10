@@ -1079,18 +1079,29 @@ footer .logo {
     background: radial-gradient(circle, var(--glow), transparent 70%);
 }
 
-@media (max-width: 600px) {
-    #cursor-glow {
-        display: none;
-    }
-}
 
-#site-header,
-main,
-footer {
-    position: relative;
-    z-index: 1;
-}
+    #site-header,
+    main,
+    footer {
+        position: relative;
+        z-index: 1;
+    }
+
+    #featured-article {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    #featured-card {
+        width: 31%;
+    }
+
+    #featured-card .article-cards {
+        width: 100%;
+    }
+
+
 
 /* Phone layout */
 @media (max-width: 600px) {
@@ -1101,11 +1112,16 @@ footer {
     gap: 12px;
 }
 
+
 #nav-toggle {
     display: block;
     margin-left: auto;
     padding: 6px 10px;
 }
+
+#featured-card {
+        width: 100%;
+    }
 
 #site-nav ul {
     display: none;
@@ -1237,5 +1253,9 @@ footer {
     .footer-brand p {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #cursor-glow {
+        display: none;
     }
 }
