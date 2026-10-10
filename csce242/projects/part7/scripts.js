@@ -28,7 +28,7 @@ const getInsights = async () => {
 const showInsights = async () => {
     const insights = await getInsights();
 
-    const articleList = document.querySelector("#article-list");
+    const articleList = document.querySelector(".article-list");
 
     insights.forEach((insight, index) => {
         if (index !== 0) {

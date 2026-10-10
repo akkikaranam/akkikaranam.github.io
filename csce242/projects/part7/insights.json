@@ -97,5 +97,16 @@
     "read_time": "7 min read",
     "description": "The people, processes, and technical foundations that help high-performing teams succeed.",
     "article_url": "#"
+},
+{
+    "_id": 10,
+    "title": "Building Digital Products With Confidence",
+    "img_name": "images/team.jpg",
+    "category": "Digital Delivery",
+    "author": "SwiftMesh Editorial Team",
+    "date": "Jul 18, 2026",
+    "read_time": "6 min read",
+    "description": "How focused teams bring digital products from an initial idea to successful delivery.",
+    "article_url": "#"
 }
 ]
