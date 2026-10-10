@@ -1,14 +1,14 @@
 [
-  {
+   {
     "_id": 1,
-    "title": "How AI Is Reshaping the Modern Workforce",
-    "img_name": "images/insights1.jpg",
-    "category": "Artificial Intelligence",
-    "author": "David Kross",
-    "date": "Oct 14, 2026",
+    "title": "Turning AI Strategy Into Business Value",
+    "img_name": "images/holoscreens.jpg",
+    "category": "AI Solutions",
+    "author": "SwiftMesh Editorial Team",
+    "date": "Oct 05, 2026",
     "read_time": "8 min read",
-    "description": "Artificial intelligence is re-engineering strategic workflows. Explore how elite organizations deploy agentic models safely.",
-    "article_url": "ai-workforce.html"
+    "description": "How practical AI strategy helps organizations turn emerging technology into measurable results.",
+    "article_url": "#"
   },
   {
     "_id": 2,
@@ -86,5 +86,16 @@
     "read_time": "6 min read",
     "description": "How organizations can prepare their security strategy before a cyber incident occurs.",
     "article_url": "#"
-  }
+  },
+  {
+    "_id": 9,
+    "title": "Why Great Tech Teams Are Built Differently",
+    "img_name": "images/table.jpg",
+    "category": "Talent Strategy",
+    "author": "SwiftMesh Editorial Team",
+    "date": "Jul 30, 2026",
+    "read_time": "7 min read",
+    "description": "The people, processes, and technical foundations that help high-performing teams succeed.",
+    "article_url": "#"
+}
 ]
