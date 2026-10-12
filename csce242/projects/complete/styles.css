@@ -1079,11 +1079,6 @@ footer .logo {
     background: radial-gradient(circle, var(--glow), transparent 70%);
 }
 
-@media (max-width: 600px) {
-    #cursor-glow {
-        display: none;
-    }
-}
 
 #site-header,
 main,
@@ -1100,6 +1095,7 @@ footer {
     flex-wrap: wrap;
     gap: 12px;
 }
+
 
 #nav-toggle {
     display: block;
@@ -1237,5 +1233,9 @@ footer {
     .footer-brand p {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #cursor-glow {
+        display: none;
     }
 }

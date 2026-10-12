@@ -32,52 +32,71 @@
         </section>
 
         <section id="contact-main">
-            <form id="contact-form">
+            <form id="contact-form" novalidate>
                 <h2>Send a Message</h2>
 
                 <label for="name">Your Name</label>
-                <input id="name" type="text" placeholder="Jane Doe">
+                <input id="name" name="name" type="text"
+                    placeholder="Jane Doe" autocomplete="name"
+                    required minlength="2">
 
                 <label for="email">Email Address</label>
-                <input id="email" type="email" placeholder="jane@company.com">
+                <input id="email" name="email" type="email"
+                    placeholder="jane@company.com" autocomplete="email"
+                    required>
 
                 <label for="company">Company Name</label>
-                <input id="company" type="text" placeholder="Acme Corp">
+                <input id="company" name="company" type="text"
+                    placeholder="Acme Corp" autocomplete="organization"
+                    required>
 
                 <label for="service">Target Service Needs</label>
-                <select id="service">
-                    <option>Select a solution target...</option>
+                <select id="service" name="service" required>
+                    <option value="">Select a solution target...</option>
                     <option>Technology Talent</option>
-                    <option>AI & Data</option>
+                    <option>AI &amp; Data</option>
                     <option>Cybersecurity</option>
                     <option>Digital Delivery</option>
                 </select>
 
                 <label for="details">Project Details</label>
-                <textarea id="details" placeholder="Tell us about your objectives, timeline, and tech stack..."></textarea>
+                <textarea id="details" name="message"
+                    placeholder="Tell us about your objectives, timeline, and tech stack..."
+                    required minlength="10"></textarea>
 
-                <button class="button button-blue" type="submit">Submit Proposal Inquiry</button>
+                <button class="button button-blue" type="submit">
+                    Submit Proposal Inquiry
+                </button>
+
+                <p id="result" class="form-status"></p>
             </form>
 
             <div id="contact-details">
                 <h2>Contact Details</h2>
 
                 <div class="contact-card">
-                    <p class="cards-title">EMAIL US</p>
-                    <a href="mailto:hello@swiftmeshsolutions.com">hello@swiftmeshsolutions.com</a>
+                    <p class="cards-title">TIMINGS</p>
+                    <p>Hours: Monday–Friday: 7:00 AM – 7:00 PM; Saturday: 9:00 AM – 5:00 PM; Sunday: Closed</p>
                 </div>
 
                 <div class="contact-card">
                     <p class="cards-title">PHONE NUMBER</p>
-                    <p>(555) 014-2420</p>
+                    <p>+1 (949)-748-6334</p>
                 </div>
 
                 <div class="contact-card">
                     <p class="cards-title">GLOBAL HEADQUARTERS</p>
-                    <p>Atlanta, Georgia</p>
+                    <p>Irvine, California</p>
                 </div>
 
-                <img src="images/contact.jpg" alt="Modern SwiftMesh office">
+                <div class="contact-map">
+                <p class="cards-title">OUR IRVINE OFFICE</p>
+
+                <iframe class="dark-map"
+                    title="Map to SwiftMesh Irvine office"
+                    src="https://www.google.com/maps?q=17744%20Sky%20Park%20Cir%2C%20Suite%20295%2C%20Irvine%2C%20CA%2092614&output=embed"></iframe>
+               
+            </div>
             </div>
         </section>
 

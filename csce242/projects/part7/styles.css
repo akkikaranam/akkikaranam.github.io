@@ -1079,6 +1079,19 @@ footer .logo {
     background: radial-gradient(circle, var(--glow), transparent 70%);
 }
 
+.contact-map {
+    margin-top: 24px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    min-height: 260px;
+    display: block;
+    margin-top: 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
 /* Phone layout */
 @media (max-width: 600px) {
     #site-nav {
