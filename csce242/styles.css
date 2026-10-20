@@ -77,12 +77,16 @@ main h2 {
 /* Assignment and Project Cards */
 .cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     margin-top: 25px;
 }
 
 .cards article {
-    flex: 1;
+    flex: 1 1 280px;
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
     background-color: #eef1ff;
     padding: 20px;
     border-left: 5px solid #536dfe;

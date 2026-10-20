@@ -1,3 +1,4 @@
+
 const navToggle = document.getElementById("nav-toggle");
 const navLinks = document.getElementById("nav-links");
 
@@ -27,9 +28,7 @@ const getInsights = async () => {
 
 const showInsights = async () => {
     const insights = await getInsights();
-
     const articleList = document.querySelector(".article-list");
-
     insights.forEach((insight, index) => {
         if (index !== 0) {
             articleList.append(displayInsight(insight));
@@ -87,10 +86,8 @@ if (document.querySelector(".article-list")) {
 
 document.getElementById("contact-form").onsubmit = async (e) => {
     e.preventDefault();
-
     const form = e.target;
     const result = document.getElementById("result");
-
     if (!form.checkValidity()) {
         form.reportValidity();
         result.innerHTML = "Please complete every required field.";
@@ -101,16 +98,13 @@ document.getElementById("contact-form").onsubmit = async (e) => {
     }
 
     const formData = new FormData(form);
-
     formData.append( "access_key", "09182e51-8c17-46d3-aad0-9f62a6e73590");
     result.innerHTML = "Sending...";
-
     try {
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
             body: formData
         });
-
         const data = await response.json();
 
         if (response.ok) {
@@ -120,13 +114,13 @@ document.getElementById("contact-form").onsubmit = async (e) => {
         else {
             result.innerHTML = "Error: " + data.message;
         }
-    } 
-    catch (error) {
-        result.innerHTML = "Sorry, we couldn't send your message.";
-    } 
-    finally {
-        setTimeout(() => {
-            result.innerHTML = "";
-        }, 5000);
-    }
+        } 
+        catch (error) {
+            result.innerHTML = "Sorry, we couldn't send your message.";
+        } 
+        finally {
+            setTimeout(() => {
+                result.innerHTML = "";
+            }, 5000);
+        }
 };
